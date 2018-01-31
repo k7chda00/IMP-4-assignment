@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>4. Assignment</title>
+</head>
+
+<body>
+    <h1>Draw lines to draw area</h1>
+    <div class="board">
+        <canvas style="background-color: #eee" id="drawCanvas"
+            width="800pt" height="600pt"
+            onMouseMove="previewLine(event)"
+            onMouseDown="getStartPos(event)"
+            onMouseUp="getEndPos(event)">
+            
+        </canvas>
+
+        <svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+
+            <path id="myPath" d="M 0 0 " stroke="rgba(47, 47, 47, 0.4)" fill="transparent"/>
+            
+        </svg>
+    </div>
+    
+    <script src="scripts.js"></script>
+</body>
+
+</html>
